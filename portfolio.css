@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.img-fluid{
+    height:30px;
+    width:50px;
+   
+}
+
+.bg-image1
+{
+    height:100vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/214/66/406/development-programming-language-programming-web-development-hd-wallpaper-preview.jpg");
+    background-size : cover;
+}
+
+.h1style
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.p1style
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.centeralign
+{
+    text-align: center;
+}
+
+.projectcard
+{
+    text-align:center;
+    border-radius: 20px;
+    border-width:2px;
+    border-style : solid;
+    border-color: thistle;
+    background-size:cover;
+    background-color: skyblue;
+}
+
+.projectsbg
+{
+    height:100%;
+    background-color : white;
+    background-size: cover;
+}
+
+
+.cardh
+{
+    font-size: 20px;
+    color:white;
+}
+
+.imageh
+{
+    margin:10px;
+    height:300px;
+    width:400px;
+    
+}
+
+.cardp
+{
+    color:white;
+}
+
+.bgcontact
+{
+    background-color: skyblue;
+    background-size: cover;
+    height: 100%;
+    text-align : center;
+}
+
+.contacth
+{
+    color:white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.projectsp
+{
+    color:black;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.contactp
+{
+    color:white;
+}
