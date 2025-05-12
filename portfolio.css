@@ -1,240 +1,338 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.img-fluid{
-    height:30px;
-    width:50px;
-   
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #007bff;
 }
 
-.bg-image1
-{
-    height:100vh;
+/* Common Utility */
+.img-fluid {
+    height: 30px;
+    width: 50px;
+    max-width: 100%;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: #2eb4f7;
+}
+
+.navstyle{
+    color: #40a7f6;
+}
+
+/* About Section */
+.bg-image1 {
+    height: 100vh;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/214/66/406/development-programming-language-programming-web-development-hd-wallpaper-preview.jpg");
-    background-size : cover;
-}
-
-.h1style
-{
-    font-size: 60px;
-    font-weight: bold;
+    background-size: cover;
+    background-position: center;
     color: white;
-}
-
-.p1style
-{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-}
-
-.centeralign
-{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.projectcard
-{
-    text-align:center;
-    border-radius: 20px;
-    border-width:2px;
-    border-style : solid;
-    border-color: thistle;
-    background-size:cover;
-    background-color: skyblue;
+.profile-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-.projectsbg
-{
-    height:100%;
-    background-color : white;
-    background-size: cover;
-}
-
-
-.cardh
-{
-    font-size: 20px;
-    color:white;
-}
-
-.imageh
-{
-    margin:10px;
-    height:300px;
-    width:400px;
-    
-}
-
-.cardp
-{
-    color:white;
-}
-
-.bgcontact
-{
-    background-color: #28a9f9;
-    background-size: cover;
-    height: 100%;
-    text-align : center;
-    color:white;
-}
-
-.contacth
-{
-    color:white;
-    font-size: 60px;
+.h1style {
+    font-size: 48px;
     font-weight: bold;
+    color: white;
 }
 
-.projectsp
-{
-    color:white;
-    font-size: 60px;
+.p1style {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Projects Section */
+.projectsbg {
+    background-color: #f8f9fa;
+}
+
+.centeralign {
+    text-align: center;
+}
+
+.projectsp {
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
-.contactp
-{
-    color:white;
-}
-
-.navbar1 {
-    position: sticky;
-    top: 0;
-    z-index: 1000;  /* Ensures the navbar stays on top of other content */
-}
-/* Add these styles to your portfolio.css file */
-
-/* Project Card Styling */
 .projectcard {
-    height: 100%;
-    border-radius: 10px;
     background-color: white;
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 15px;
-    
+    height: 100%;
+    margin: 20px auto;
+    max-width: 500px;
 }
 
 .projectcard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Card Image */
-.imageh {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin: 15px 0;
-}
-
-/* Project Card Heading */
 .cardh {
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 15px;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#007bff ;
-}
-
-/* Project Card Description */
-.cardp {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #555;
     margin-bottom: 10px;
 }
 
-/* Projects Section Background */
-.projectsbg {
-    padding: 50px 0;
-    background-color: #f5f5f5;
+.cardp {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Projects Section Title */
-.projectsp {
-    font-size: 2.5rem;
+.imageh {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-card {
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 280px;
+    margin: auto;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-card h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.contacth {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+/* Skills Section */
+.skillsbg {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skillsheading {
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillsimg {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skillsimg:hover {
+    transform: scale(1.1);
+}
+
+/* Resume Section */
+.resumebg {
+    background-color: #f1f3f5;
     text-align: center;
-    color: #333;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-    .cardh {
-        font-size: 1.2rem;
-        min-height: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    .projectcard {
-        margin-bottom: 25px;
-    }
-    
-    .imageh {
-        max-height: 250px;
-    }
-}
-
-@media (max-width: 576px) {
-    .cardh {
-        font-size: 1.1rem;
-        min-height: 40px;
-    }
-    
-    .projectcard {
-        padding: 15px;
-    }
-    
-    .projectsp {
-        font-size: 2rem;
-    }
-}
-
-/* Helper for image centering */
-.centeralign {
-    text-align: center;
-    width: 100%;
-}
-.navbar .nav-link.active {
-    color: #007bff !important;
+.resumeheading {
+    font-size: 32px;
     font-weight: bold;
-}
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
 }
 
+.resumeimg {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Certificates Section */
+.certificatesbg {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.certificatesheading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.certificates-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 15px;
+}
+
+.certificate-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.certificatesimg {
+    width: 100%;
+    height: 310px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures uniform crop/fill */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificatesimg:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Media Queries */
 @media (max-width: 768px) {
-    .profile-image {
-        width: 120px;
-        height: 120px;
+    .h1style {
+        font-size: 32px;
+    }
+
+    .p1style {
+        font-size: 18px;
+    }
+
+    .skillsimg {
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+    }
+
+    .resumeimg, .certificatesimg {
+        max-width: 90%;
+    }
+
+    .projectcard {
+        width: 90%;
     }
 }
 
-@media (max-width: 576px) {
-    .profile-image {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 15px;
+@media (max-width: 480px) {
+    .h1style {
+        font-size: 26px;
     }
-    
-    .intro-section {
-        flex-direction: column;
-        text-align: center;
+
+    .p1style {
+        font-size: 16px;
     }
+
+    .projectsp, .skillsheading, .resumeheading, .certificatesheading, .contacth {
+        font-size: 24px;
+    }
+
+    .skillsimg {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+.minimal-footer {
+    background-color: #111; 
+    color: #ccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+
+.minimal-footer a {
+    color: #90e0ef;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.minimal-footer a:hover {
+    color: #ffffff;
+}
+
+.minimal-footer i {
+    color: #90e0ef;
+    margin: 0 4px;
+}
+
+.minimal-footer p {
+    margin: 5px 0;
+}
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
 }

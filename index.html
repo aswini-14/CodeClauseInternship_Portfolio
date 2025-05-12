@@ -12,22 +12,27 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://www.seekpng.com/png/detail/111-1112824_picture-my-portfolio-logo-png.png" class="img-fluid" alt="Brand Logo" style="max-height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link active" href="#aboutme">About Me<span class="sr-only">(current)</span></a>
-                    <a class="nav-link active " href="#projects">Projects Gallery</a>
-                    <a class="nav-link active" href="#contact">Contact </a>
-                </div>
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.seekpng.com/png/detail/111-1112824_picture-my-portfolio-logo-png.png" class="img-fluid" alt="Brand Logo" style="max-height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto navstyle">
+                <a class="nav-link" href="#aboutme">About Me</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#certificates">Certificates</a>
+                <a class="nav-link" href="#resume">Resume</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <div class="bg-image1 d-flex flex-column justify-content-center" id="aboutme">
         <div class="container">
@@ -44,10 +49,29 @@
             </div>
         </div>
     </div>
+
+    <section id="skills">
+        <div class="skillsbg">
+            <h2 class="skillsheading">Skills</h2>
+            <div class="skills-icons">
+            <img src="images/html.png" alt="HTML" class="skillsimg" />
+            <img src="images/css.png" alt="CSS" class="skillsimg" />
+            <img src="images/javascript.png" alt="JavaScript" class="skillsimg" />
+            <img src="images/react.png" alt="React" class="skillsimg" />
+            <img src="images/node.png" alt="Node.js" class="skillsimg" />
+            <img src="images/postgresql.png" alt="PostgreSQL" class="skillsimg" />
+            <img src="images/mongodb.png" alt="MongoDB" class="skillsimg" />
+            <img src="images/git.png" alt="Git" class="skillsimg" />
+            <img src="images/docker.png" alt="Docker" class="skillsimg" />
+            </div>
+        </div>
+    </section>
+
     
-    <div class="projectsbg d-flex flex-column justify-content-center pt-5 pb-5" id="projects">
+    <section>
+        <div class="skillsbg d-flex flex-column justify-content-center pt-5 pb-5" id="projects">
         <div class="centeralign">
-            <h1 class="projectsp">PROJECTS GALLERY</h1>
+            <h1 class="projectsp">Projects Gallery</h1>
         </div>
         <div class="container">
             <!-- Projects Row -->
@@ -124,21 +148,67 @@
             </div>
         </div>
     </div>
-    
-    <div class="bgcontact d-flex flex-column " id="contact">
-        <div class="centeralign">
-            <h class="contacth">CONTACT ME</h>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                      <p><i class="fas fa-envelope mr-2"></i> EMAIL : ashukommineni14@gmail.com</p> 
-                      <p><i class="fab fa-linkedin mr-2"></i> LINKEDIN : https://www.linkedin.com/in/aswini-kommineni</p> 
-                      <p><i class="fas fa-phone-alt mr-2"></i> PHONE : 9391981838</p>
-                      <p><i class="fas fa-map-marker-alt mr-2"></i> | Andhra Pradesh | Visakhapatnam | 530012 |</p>
+    </section>
+
+
+    <section id="certificates">
+        <div class="certificatesbg">
+            <h2 class="certificatesheading">Certificates</h2>
+            <div class="certificates-gallery">
+                
+                <div class="certificate-card">
+                    <p class="certificate-title"><strong>NPTEL – The Joy of Computing Using Python</strong></p>
+                    <img src="images/nptel.png" alt="NPTEL Certificate" class="certificatesimg" />
                 </div>
+
+                <div class="certificate-card">
+                    <p class="certificate-title"><strong>Frontend Development Training</strong></p>
+                    <img src="images/frontend.png" alt="Frontend Training Certificate" class="certificatesimg" />
+                </div>
+
+                <div class="certificate-card">
+                    <p class="certificate-title"><strong>CodeClause Internship</strong></p>
+                    <img src="images/codeclause.png" alt="CodeClause Internship Certificate" class="certificatesimg" />
+                </div>
+
+                <div class="certificate-card">
+                    <p class="certificate-title"><strong>Salesforce Virtual Internship</strong></p>
+                    <img src="images/salesforce.png" alt="Salesforce Internship Certificate" class="certificatesimg" />
+                </div>
+
             </div>
         </div>
+    </section>
+
+
+    <section id="resume">
+        <div class="resumebg">
+            <h2 class="resumeheading">Resume</h2>
+            <p>You can view my resume below and download it</p>
+            <img src="images/resume.png" alt="Resume Preview" class="resumeimg" />
+            <div style="margin-top: 20px;">
+                <a href="images/Aswini_Resume_ats111.pdf" download class="download-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer id="contact" class="minimal-footer text-white">
+    <div class="container text-center py-3">
+        <h5 class="footer-heading">Contact Me</h5>
+        <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:ashukommineni14@gmail.com">ashukommineni14@gmail.com</a> &middot;
+        <i class="fas fa-phone"></i> 9391981838 &middot;
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/aswini-kommineni-a0a33a244/" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+        <i class="fas fa-map-marker-alt"></i> Visakhapatnam, Andhra Pradesh - 530012
+        </p>
     </div>
+    </footer>
+
 </body>
 </html>
